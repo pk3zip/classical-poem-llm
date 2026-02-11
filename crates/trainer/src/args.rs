@@ -22,5 +22,5 @@ pub struct Args {
 
     /// Enable quiet output
     #[arg(short, long)]
-    pub quite: bool,
+    pub quiet: bool,
 }

@@ -9,9 +9,9 @@ use train::train_model;
 fn main() {
     let args = Args::parse();
 
-    let log = Logger::new(args.verbose && !args.quite, args.quite);
+    let log = Logger::new(args.verbose && !args.quiet, args.quiet);
 
-    if !args.quite {
+    if !args.quiet {
         println!("Training with context size: {}", args.context_size)
     }
 
@@ -20,7 +20,7 @@ fn main() {
     model
         .save_to_file(&args.output)
         .expect("Failed to save model");
-    if !args.quite {
+    if !args.quiet {
         println!("✅ Training complete. Model saved to {}", args.output);
     }
 }

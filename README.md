@@ -102,7 +102,7 @@ Options:
 - `-c, --context-size <N>`: N-gram context size (default: `5`)
 - `-o, --output <FILE>`: Output model file (default: `model.bin`)
 - `-v, --verbose`: Enable verbose logging
-- `-q, --quite`: Enable quiet mode (note: flag name is `--quite`)
+- `-q, --quite`: Enable quiet mode
 
 Example:
 
